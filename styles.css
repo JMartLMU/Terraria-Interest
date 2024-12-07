@@ -1,0 +1,88 @@
+.jacquard-12-regular {
+  font-family: "Jacquard 12", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-image: linear-gradient(#5b76f7, #74b0ad);
+  font-family: "Jacquard 12";
+  color: azure;
+  text-shadow: 2px 2px black;
+}
+
+header,
+footer {
+  display: flex;
+  flex-direction: row;
+  margin: 8px;
+}
+
+#title,
+header {
+  animation-name: titleanimation;
+  animation-duration: 4.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  justify-content: center;
+}
+
+@keyframes titleanimation {
+  from {
+    rotate: -1deg;
+    font-size: 7vh;
+  }
+  to {
+    rotate: 2deg;
+    font-size: 8.4vh;
+  }
+}
+
+footer {
+  font-size: 20px;
+  justify-content: space-between;
+}
+
+main {
+  background-image: url("https://forums.terraria.org/index.php?attachments/n-1-png.31583/");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: white;
+  border-radius: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2vh;
+  font-size: 1rem;
+}
+
+form {
+  display: grid;
+  grid-template: auto auto auto auto / 6em 165px;
+  gap: 5px;
+}
+
+article {
+  height: 97.9vh;
+  display: grid;
+  grid-template-rows: 50px auto 30px;
+}
+
+#inputfield,
+#outputfield {
+  padding: 2vh;
+  font-size: 120%;
+  background-color: rgb(56, 58, 134, 0.5);
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+}
+
+#inputfield {
+  border-radius: 15%;
+}
+
+#outputfield {
+  border-radius: 20%;
+}

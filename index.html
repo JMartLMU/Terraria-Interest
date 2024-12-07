@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Terraria Interest</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jacquard+12&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <article>
+      <header>
+        <img
+          id="logo"
+          src="Assets/Terraria  Tree Logo - Full HD PNG - Imgur.png"
+        />
+        <div id="title">Terraria Interest</div>
+      </header>
+      <main>
+        <div id="inputfield">
+          <form>
+            <div>Pricipal</div>
+            <input id="principle" />
+            <div>Period</div>
+            <select id="period">
+              <option>-------------------------------</option>
+              <option value="1">Annually</option>
+              <option value="2">Semi-Annually</option>
+              <option value="4">Quarterly</option>
+              <option value="12">Monthly</option>
+              <option value="52">Weekly</option>
+              <option value="365">Daily</option>
+            </select>
+            <div>% Interest Rate</div>
+            <div>
+              <input
+                type="range"
+                id="apr"
+                value="2"
+                min="0"
+                max="50"
+                step=".25"
+              /><output id="aprText">--.--</output>
+            </div>
+            <div>Years</div>
+            <input type="number" id="years" />
+          </form>
+        </div>
+        <div id="outputfield">
+          <p>Interest accumulated is $<output id="interest">-----</output></p>
+          <p>Total is $<output id="total">------</output></p>
+        </div>
+      </main>
+      <footer>
+        <div>©️ 2024</div>
+        <div>
+          <a href="https://codesandbox.io/p/sandbox/terraria-interest-qvjqy8"
+            >Code Link!</a
+          >
+        </div>
+      </footer>
+    </article>
+  </body>
+</html>
